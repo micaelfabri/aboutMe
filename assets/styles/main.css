@@ -1,0 +1,127 @@
+/* Reset CSS */
+* {
+    margin: 0; /* Remove margem padrão */
+    padding: 0; /* Remove padding padrão */
+    box-sizing: border-box; /* Inclui bordas no cálculo das dimensões */
+}
+
+/* Tipografia */
+body {
+    font: 16px/1.6 Arial, sans-serif; /* Define fonte, tamanho e altura da linha */
+    color: #333; /* Cor do texto */
+    background-color: rgb(238, 238, 238); /* Cor de fundo */
+}
+
+/* Layout */
+header, main, footer {
+    max-width: 800px; /* Largura máxima */
+    margin: auto; /* Centraliza */
+    padding: 20px; /* Espaçamento interno */
+}
+
+/* Estilos do header */
+header {
+    text-align: center; /* Centraliza o texto */
+    margin-bottom: 20px; /* Espaçamento inferior */
+}
+
+/* Estilos seções */
+.quemSouEu {
+    display: flex; /* Layout flexível */
+    flex-wrap: wrap; /* Permite quebra de linha */
+    gap: 20px; /* Espaçamento entre itens */
+}
+
+.quemSouEu article {
+    flex: 1; /* Cresce uniformemente */
+    min-width: 300px; /* Largura mínima */
+}
+
+.quemSouEu img {
+    width: 100%; /* Largura total do contêiner */
+    max-width: 250px; /* Largura máxima */
+    border-radius: 18px; /* Bordas arredondadas */
+    margin-bottom: 10px; /* Espaçamento inferior */
+}
+
+.quemSouEu h2 {
+    color: #ff7112; /* Cor do texto */
+}
+
+/* Estilo novas seções */
+article h2 {
+    color: #ff7112; /* Mesma cor usada para h2 em quemSouEu */
+    margin-bottom: 10px; /* Espaçamento inferior para os títulos */
+}
+
+article ul {
+    list-style-type: none; /* Remove os marcadores da lista */
+    padding: 0; /* Remove o padding */
+}
+
+article ul li {
+    background: #f2f2f2; /* Fundo cinza claro para itens da lista */
+    margin: 5px 0; /* Margem entre itens */
+    padding: 10px; /* Padding dentro dos itens */
+    border-radius: 5px; /* Bordas arredondadas */
+}
+
+article ul li a {
+    color: #ff7112; /* Cor do link */
+    text-decoration: none; /* Remove sublinhado dos links */
+}
+
+article ul li a:hover {
+    text-decoration: underline; /* Sublinha o link ao passar o mouse */
+}
+
+article p a {
+    color: #ff7112; /* Cor do link nos parágrafos */
+    text-decoration: none; /* Remove sublinhado dos links */
+}
+
+article p a:hover {
+    text-decoration: underline; /* Sublinha o link ao passar o mouse */
+}
+
+/* Estilo do footer */
+footer {
+    text-align: center; /* Centraliza o texto */
+    padding: 10px; /* Espaçamento interno */
+    border-top: 1px solid #ccc; /* Borda superior */
+    margin-top: 20px; /* Espaçamento superior */
+    font-size: 0.9em; /* Tamanho da fonte */
+}
+
+/* Estilo do botão */
+.styled-button {
+    background-color: #ff7112; /* Cor de fundo laranja */
+    color: white; /* Cor do texto branca */
+    border: none; /* Remove a borda padrão */
+    border-radius: 5px; /* Bordas arredondadas */
+    padding: 10px 20px; /* Espaçamento interno */
+    font-size: 16px; /* Tamanho da fonte */
+    cursor: pointer; /* Cursor de ponteiro ao passar sobre o botão */
+    transition: background-color 0.3s; /* Transição suave para a cor de fundo */
+}
+
+.styled-button:hover {
+    background-color: #e66000; /* Cor de fundo mais escura ao passar o mouse */
+}
+
+.styled-button:active {
+    background-color: #cc5200; /* Cor de fundo ainda mais escura ao clicar */
+}
+
+.styled-button:focus {
+    outline: none; /* Remove o contorno padrão ao focar */
+    box-shadow: 0 0 0 3px rgba(255, 113, 18, 0.5); /* Adiciona sombra ao focar */
+}
+
+/* Centraliza o botão na tela */
+.button-container {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    margin-top: 20px; /* Espaçamento superior */
+    width: 100%; /* Ocupa toda a largura do contêiner */
+}

@@ -23,6 +23,11 @@ header, main, footer {
 header {
     text-align: center; /* Centraliza o texto */
     margin-bottom: 20px; /* Espaçamento inferior */
+    background-color: #e0e0e0; /* Cor de fundo */
+    padding: 20px; /* Espaçamento interno */
+    margin-top: 20px; /* Espaçamento superior */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra */
 }
 
 /* Estilos seções */
@@ -30,11 +35,20 @@ header {
     display: flex; /* Layout flexível */
     flex-wrap: wrap; /* Permite quebra de linha */
     gap: 20px; /* Espaçamento entre itens */
+    align-items: flex-start; /* Alinha itens ao topo */
 }
 
 .quemSouEu article {
     flex: 1; /* Cresce uniformemente */
     min-width: 300px; /* Largura mínima */
+    background-color: #e0e0e0; /* Cor de fundo */
+    padding: 20px; /* Espaçamento interno */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra */
+    border-radius: 8px; /* Bordas arredondadas */
+}
+
+.quemSouEu article.full-width {
+    flex-basis: 100%; /* Ocupa toda a largura */
 }
 
 .quemSouEu img {
@@ -60,7 +74,7 @@ article ul {
 }
 
 article ul li {
-    background: #f2f2f2; /* Fundo cinza claro para itens da lista */
+    background: #eeeeee; /* Fundo cinza claro para itens da lista */
     margin: 5px 0; /* Margem entre itens */
     padding: 10px; /* Padding dentro dos itens */
     border-radius: 5px; /* Bordas arredondadas */
@@ -113,7 +127,7 @@ footer {
     background-color: #cc5200; /* Cor de fundo ainda mais escura ao clicar */
 }
 
-.styled-button:focus {
+.styled-button:hover:focus {
     outline: none; /* Remove o contorno padrão ao focar */
     box-shadow: 0 0 0 3px rgba(255, 113, 18, 0.5); /* Adiciona sombra ao focar */
 }
@@ -125,3 +139,9 @@ footer {
     margin-top: 20px; /* Espaçamento superior */
     width: 100%; /* Ocupa toda a largura do contêiner */
 }
+
+.quemSouEu article.compact-card {
+    flex: 1; /* Permite que o artigo cresça para ocupar espaço disponível */
+    max-width: 400px; /* Define uma largura máxima para o artigo */
+}
+
